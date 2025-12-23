@@ -1,5 +1,6 @@
-function status(request, response) {
-  response.status(200).json({ chave: "Retorno valido" });
-}
+import database from "../../../../infra/database.js";
 
-export default status;
+async function status(request, response) {
+  const result = await datyabase.query("SELECT 1 + 1 as sum");
+  response.status(200).json({ chave: "passou" });
+}
