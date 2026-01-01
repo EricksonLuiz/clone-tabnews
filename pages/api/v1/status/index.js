@@ -5,3 +5,5 @@ async function status(request, response) {
   console.log(result);
   response.status(200).json({ chave: "Retorno valido" });
 }
+
+export default status;
